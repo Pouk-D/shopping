@@ -1,8 +1,9 @@
 {
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder"
-    }
+  "buildCommand": "npm run generate",
+  "outputDirectory": "dist",
+  "framework": null,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/200.html" }
   ]
 }
