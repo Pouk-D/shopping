@@ -1,4 +1,6 @@
 export default {
+  ssr: false,
+
   head: {
     title: 'ShopZone',
     meta: [
