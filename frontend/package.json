@@ -1,0 +1,21 @@
+{
+  "name": "shopping-frontend",
+  "version": "1.0.0",
+  "description": "E-commerce frontend",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "nuxt": "^2.17.3",
+    "socket.io-client": "^4.8.3",
+    "vue": "^2.7.14",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/vercel-builder": "^0.25.0"
+  }
+}

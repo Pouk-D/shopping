@@ -1,0 +1,86 @@
+Create a full-stack shopping (e-commerce) project with the following requirements:
+
+Architecture:
+- Frontend and Backend must be in separate folders.
+- Use Nuxt.js 2 for frontend.
+- Use Node.js with Express for backend API.
+- Use MongoDB as database.
+- Use REST API (not GraphQL).
+
+Project Structure:
+root/
+ ├── frontend/  (Nuxt 2 app)
+ └── backend/   (Node.js + Express API)
+
+Backend Requirements:
+- Use Express.js
+- Connect to MongoDB using Mongoose
+- Use dotenv for environment variables
+- Implement MVC structure
+- Include:
+  - User authentication (JWT)
+  - Register / Login
+  - Product CRUD (Admin only for create/update/delete)
+  - Category model
+  - Cart system
+  - Order system
+- Middleware:
+  - Auth middleware
+  - Error handler middleware
+- Use bcrypt for password hashing
+- Enable CORS
+- API prefix: /api/v1
+
+Frontend Requirements (Nuxt 2):
+- Use Axios for API calls
+- Use Vuex for state management
+- Pages:
+  - Home (Product list)
+  - Product detail
+  - Login
+  - Register
+  - Cart
+  - Checkout
+  - Admin dashboard
+- Store:
+  - Auth module
+  - Cart module
+  - Product module
+- Use middleware for auth protection
+- Store JWT in localStorage
+- Use environment variable for API base URL
+
+Database Models:
+1. User:
+   - name
+   - email
+   - password
+   - role (user/admin)
+
+2. Product:
+   - name
+   - description
+   - price
+   - stock
+   - category
+   - image
+   - createdAt
+
+3. Category:
+   - name
+
+4. Order:
+   - user
+   - items (product, quantity, price)
+   - totalAmount
+   - status
+   - createdAt
+
+Extra:
+- Provide sample .env file
+- Provide package.json for both frontend and backend
+- Provide installation steps
+- Provide example API endpoints
+- Use clean and production-ready structure
+
+Make the code organized and ready to scale.
